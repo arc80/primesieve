@@ -4,7 +4,8 @@
 ------------------------------------*/
 
 // This is a sample application that prints all the prime numbers that fit in a 32-bit integer (up
-// to 4294967296) using a prime sieve algorithm.
+// to 4294967296) using a segmented prime sieve algorithm.
+// https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes#Segmented_sieve
 //
 // It uses only 8192 bytes of heap space to do the sieve. The first 4096 bytes (divisorMask) is used
 // to sieve all the primes up to 65536, and the other 4096 bytes (primeMask) is used to sieve all
