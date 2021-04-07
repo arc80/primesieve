@@ -35,7 +35,7 @@ PLY_INLINE void set(ArrayView<u32> divisorMask, u32 index) {
 }
 
 int main() {
-    StringWriter sw = StdOut::text();
+    OutStream sw = StdOut::text();
 
     // Every bit in divisorMask represents an odd integer < 65536:
     Array<u32> divisorMask;
